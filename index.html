@@ -5,289 +5,302 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- css libaries -->
-    <link rel="stylesheet" href="library/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="library/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/custom.css">
-
-    <!-- Title -->
     <title>Aashish Acharya</title>
-    <link rel="icon" type="image/png" href="img/111.png">
+
+    <link rel="stylesheet" href="style.css">
+    <script>src = "https://code.jquery.com/jquery-3.6.1.min.js"</script>
+    <script src="https://kit.fontawesome.com/f3154eac66.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="Image/a.png" type="image/gif">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-light fixed-top py-3">
-            <div class="container">
-                <div class="container-fluid">
-                    <a class="navbar-brand scroll-link" href="#home">
-                        <img src="img/logo-color-removebg-preview1.png" alt="Aashish" width="60" height="65">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" aria-current="page" href="#home">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#resume">Resume</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#protfolio">Protfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link scroll-link" href="#contact">Contact</a>
-                            </li>
+    <!-- Home section  -->
+    <div id="header">
 
+        <nav class="navbar">
+            <a href="#header"><img src="image/aashish-low-resolution-logo-color-on-transparent-background.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+                <li>
+                    <a href="#portfolio">Skills</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul><i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+            <div class="header-text">
+                <p>
+                    Hello, My Name is
+                </p>
+                <h1>
+                    Aashish Acharya <br>
+                </h1>
+                <h2>&nbsp And I'm a <span>Student</span></h2>
+            </div>
+            <p class="hire"><br> <a href="#contact">Contact Me</a></p>
+
+        </div>
+
+    </div>
+
+    <!-- About Section  -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcolumn1">
+                    <img src="image/my project 2.png">
+                    <a href="https://www.facebook.com/aashish.acharya007">Read More</a>
+                </div>
+                <div class="aboutcolumn2">
+                    <h1 class="subtitle">
+                        About Me
+                    </h1>
+                    <p>
+                        <span style="color: #ff004f;"> If you know me you know my story.</span> I am a <span
+                            style="color: #b54769;"> Computer Enthusiast</span> keenly intrested in Computer
+                        Programming, Designing, writing and many more.<span style="color: #b54769;"> Welcome</span>,
+                        enter with a Happy Heart 🧡.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="bars">
+                            <div class="info">
+                                <span>HTML</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="line html"></div>
+                        </div>
+
+                        <div class="bars">
+                            <div class="info">
+                                <span>CSS</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="line css"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>JavaScript</span>
+                                <span>35%</span>
+                            </div>
+                            <div class="line javascript"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>PHP</span>
+                                <span>20%</span>
+                            </div>
+                            <div class="line php"></div>
+                        </div>
+                        <div class="bars">
+                            <div class="info">
+                                <span>Random Writings</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="line writings"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - 2022</span><br> NCIT college project fourth semester.</li>
+                            <li><span>2020 - Present</span><br>Learning Designing.</li>
+                            <li><span>2016 - Present</span><br>Writing has been a hobby.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - Present</span><br>BECE from <a href="https://ncit.edu.np/"
+                                    target="_blank">NCIT.</a></li>
+                            <li><span>2018</span><br>High school Degree from <a href="https://nist.edu.np/"
+                                    target="_blank"> NIST.</a></li>
+                            <li><span>2016</span><br>School Leaving Certificate from <a
+                                    href="https://www.facebook.com/svi.vanasthali" target="_blank"> SVI.</a></li>
                         </ul>
                     </div>
                 </div>
-        </nav>
-    </header>
+            </div>
+        </div>
+    </div>
 
-    <!-- Home -->
-    <section id="home">
-        <div id="particles-js"></div>
+    <!-- serivces  -->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtitle">
+                My Services
+            </h1>
+            <div class="serivces-list">
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Web Design</h2>
+                    <p>I am fond of Designing. I'm a slow learner still learning.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Programming</h2>
+                    <p>I am fond of Programming. I'm a slow learner still learning.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-comment"></i>
+                    <h2>Advice</h2>
+                    <p>A few words of advice to acquaintance</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------portfolio-------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="subtitle">
+                My Work
+            </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/book-store.png">
+                    <div class="layer">
+                        <h3>E-commerce BookStore</h3>
+                        <p>The Store connects you to the finest writers in the world.It helps you increase your writing,
+                            reading, memorizing skill.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/pexels-picjumbocom-2106611.jpg">
+                    <div class="layer">
+                        <h3>Personal Website</h3>
+                        <p>The Website connects you with me. It was my first project.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/tic-tac-toe.jpg">
+                    <div class="layer">
+                        <h3>Tic Tac Toe</h3>
+                        <p>It is a simple game built using basic programming language. You can play it here.</p>
+                        <a href="tictactoe.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/ka-kha-ga1.png">
+                    <div class="layer">
+                        <h3>Writing</h3>
+                        <p>Writing has been my passion. You can read my thoughts and quotes here.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/wordriddle.jpg">
+                    <div class="layer">
+                        <h3>Word Guessing Game</h3>
+                        <p>It is a simple game built using basic JS. You can play it here.</p>
+                        <a href="word.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/coming soon.png">
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>Will be added after I Complete my next project.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------Contact-------- -->
+    <div id="contact">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 justify-content-center">
-                    <h2 id="name" class="wow fadeIn">Aashish Acharya.</h2>
-                    <p id="tagline" class="wow fadeIn"> Computer Enthusiast!</p>
-                    <a href="#resume" id="learn-more" class="scroll-link wow fadeIn"> <i class="fa fa-angle-down"></i> Learn More</a>
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> er.aashishacharya@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +977-9843291384</p>
+                    <p><i class="fa-solid fa-phone"></i> +977-9818656166</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/aashish.acharya.395" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/aashish_acharya_/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/aashish-acharya-a4128923a/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://twitter.com/aashish577" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/aashish577" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.youtube.com/channel/UCU0cT9ftPp95dn9QRLgq0zQ" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="Image/my-cv.pdf" download class="btn2">Download CV</a>
                 </div>
-
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Youe Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn2">Submit</button>
+                    </form>
+                </div>
             </div>
 
-        </div>
-    </section>
-
-    <!-- Resume -->
-    <section id="resume">
-        <div class="container pt-3">
-            <div class="row">
-                <h1 class="title text-center w-100 wow slideInUp">Hi, I'm Aashish</h1>
-                <p class="about text-center w-75 mx-auto wow fadeIn">If you know me you know my story. I am a <strong> Computer
-                        Enthusiast </strong> keenly intrested in Computer
-                    Programming, Designing, writing and many more... <strong> Welcome </strong>, enter with a Happy
-                    Heart.</p>
-            </div>
-            <div class="row">
-                <h2 class="title text-center w-100 wow fadeIn">More about me</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4 py-3">
-                    <div class="card wow fadeIn" style="max-width: 18rem;">
-                        <img src="img/pexels-lukas-574077.jpg" class="card-img-top" alt="Programming">
-                        <div class="card-body">
-                            <h5 class="card-title">Programming</h5>
-                            <p class="card-text">I am fond of programming. I'm a slow learner still learning. Writing a
-                                "Hello World" Program makes me feel Proud and special 😂😂</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 py-3">
-                    <div class="card wow fadeIn" style="max-width: 18rem;">
-                        <img src="img/pexels-ovan-576901.jpg" class="card-img-top" alt="Designing">
-                        <div class="card-body">
-                            <h5 class="card-title">Designing</h5>
-                            <p class="card-text">I am fond of Designing. I'm a slow learner still learning. Designing a
-                                Simple Logo makes me feel Proud and special 😂😂</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 py-3">
-                    <div class="card wow fadeIn" style="max-width: 18rem;">
-                        <img src="img/pexels-picjumbocom-2106611.jpg" class="card-img-top" alt="Writing">
-                        <div class="card-body">
-                            <h5 class="card-title">Writing</h5>
-                            <p class="card-text">I am fond of Writing Shayari. I'm a slow learner still learning. Writing a
-                                Shayari makes me feel Proud and special 😂😂</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="copyright">
+                <p>
+                    Copyright © Aashish 2022. All rights reserved.
+                </p>
             </div>
         </div>
 
-    </section>
-
-    <!-- Protfolio -->
-    <section id="protfolio">
-        <div class="container pt-3">
-            <div class="row">
-                <h2 class="title text-center w-100 wow slideInUp">My Achievements</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-4 wow fadeIn">
-                    <div class="grid">
-                        <img src="img//store-g96835b6a5_1280.png" alt="E-Commerce">
-                        <div class="overlay">
-                            <div class="text">
-                                E-Commerce
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeIn">
-                    <div class="grid">
-                        <img src="img/kobu-agency-67L18R4tW_w-unsplash.jpg" alt="Hello World">
-                        <div class="overlay">
-                            <div class="text">
-                                Hello World
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeIn">
-                    <div class="grid">
-                        <img src="img/pexels-karolina-grabowska-4386326.jpg" alt="Calculator">
-                        <div class="overlay">
-                            <div class="text">
-                                Calculator
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeIn">
-                    <div class="grid">
-                        <img src="img/tic-tac-toe-g64b593e95_1280.png" alt="Tic-Tac-Toe">
-                        <div class="overlay">
-                            <div class="text">
-                                Gaming
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeIn">
-                    <div class="grid">
-                        <img src="img/announcement-g0fdff2ae4_1280.png" alt="Coming Soon">
-                        <div class="overlay">
-                            <div class="text">
-                                Coming Soon...
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-4 wow fadeIn">
-                    <div class="grid">
-                        <img src="img/announcement-g0fdff2ae4_1280.png" alt="Coming Soon">
-                        <div class="overlay">
-                            <div class="text">
-                                Coming Soon...
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- contact -->
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <h1 class="title text-center w-100 wow slideInUp">Say Hi to Me.</h1>
-            </div>
-            <form action="https://formspree.io/er.aashishacharya@gmail.com" method="post">
-                <div class="row py-4">
-                    <div class="form-group col-md-6 wow fadeIn">
-                        <input type="text" name="name" class="form-control" placeholder="Enter Your Name...">
-                    </div>
-                    <div class="form-group col-md-6 wow fadeIn">
-                        <input type="email" name="email" class="form-control" placeholder="Enter Your Email...">
-                    </div>
-                    <div>
-                        <div class="form-group col-md-12 wow fadeIn">
-                            <textarea class="form-control" name="message" rows="3" placeholder="Enter Your Message"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-block submit-message">Submit</button>
-            </form>
 
 
-        </div>
 
-    </section>
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
 
-    <!-- footer -->
-    <Footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 wow fadeIn">
-                    <ul>
-                        <li><strong>Email:</strong>er.aashishacharya@gmail.com</li>
-                        <li><strong>Phone:</strong>+9779843291384</li>
-                    </ul>
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+            var sidemeu = document.getElementById("sidemenu");
 
-                </div>
-                <div class="col-md-2 wow fadeIn">
-                    <a href="#home" class="back-to-top scroll-link"><i class="fa fa-arrow-circle-up fa-2x" ></i></a>
+            function openmenu(){
+                sidemeu.style.right = "0";
+            }
+            function closemenu(){
+                sidemeu.style.right="-200px";
+            }
+        </script>
 
-                </div>
-                <div class="col-md-5 wow fadeIn">
-                    <ul id="social">
-                        <li><a href="https://www.facebook.com/aashish.acharya.395" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-                        <li><a href="https://www.instagram.com/aashish_acharya_/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="https://github.com/aashish577" target="_blank"><i class="fa fa-github"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UCU0cT9ftPp95dn9QRLgq0zQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/aashish-acharya-a4128923a/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="https://twitter.com/aashish577" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-            <div class="row">
-                <div class="col-md-6 wow fadeIn">
-                    <a href="https://www.facebook.com/aashish.acharya.395">Desgined and built by Aashish Acharya</a>
-                </div>
-                <div class="col-md-6 wow fadeIn">
-                    <p>Copyright © 2022 Aashish Acharya</p>
-                </div>
-            </div>
-        </div>
-
-    </Footer>
-
-    <!-- JS libaries -->
-    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/smooth-scroll.js"></script>
-    <script type="text/javascript" src="js/wow.js"></script>
-    <script type="text/javascript" src="js/particles.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <script type="text/javascript">
-        new WOW().init();
-        $('.scroll-link').on('click', function(e){
-            e.preventDefault();
-            $('html, body').animate({scrollTop: $(this.hash).offset().top-50}, 750);
-        });
-        $('.nav-item').on('click', function(e){
-            $('.nav-item').removeClass('active');
-            $('.this').addClass('active');
-        });
-    </script>
+        <script>src = "script.js"</script>
 
 </body>
 
